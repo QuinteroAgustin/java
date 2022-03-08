@@ -1,4 +1,4 @@
-package ja51;
+package ja51b;
 import java.util.ArrayList;
 
 public class ja51 {

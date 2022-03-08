@@ -1,4 +1,4 @@
-package ja51;
+package ja51b;
 public class Enfant {
     private int age;
     private String prenom;
