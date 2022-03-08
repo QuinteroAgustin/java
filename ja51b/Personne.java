@@ -10,9 +10,7 @@ public class Personne {
     Personne (String prenom, String nom, ArrayList<Enfant> Enfants_p){
         set_prenom(prenom);
         set_nom(nom);
-        for(Enfant Enfant : Enfants_p){
-            this.Enfants.add(Enfant);
-        }
+        this.Enfants = Enfants_p;
     }
     Personne (){
         set_prenom("???");
@@ -45,7 +43,7 @@ public class Personne {
     /**
      * @return ArrayList<Enfant> return the Enfants
      */
-    public int getEnfants() {
+    public int getNbEnfants() {
         return this.Enfants.size();
     }
 
@@ -53,9 +51,7 @@ public class Personne {
      * @param Enfants the Enfants to set
      */
     public void setEnfants(ArrayList<Enfant> Enfants_p) {
-        for(Enfant Enfant : Enfants_p){
-            this.Enfants.add(Enfant);
-        }
+        this.Enfants = Enfants_p;
     }
 
     /**
