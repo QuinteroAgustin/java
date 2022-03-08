@@ -5,10 +5,14 @@ public class Personne {
     // Propriétés
     private String nom;
     private String prenom;
+    private ArrayList<Enfant> Enfants = new ArrayList<Enfant>();
     // Constructeur
-    Personne (String prenom, String nom){
+    Personne (String prenom, String nom, ArrayList<Enfant> Enfants){
         set_prenom(prenom);
         set_nom(nom);
+        for(String Enfant : Enfants){
+            this.Enfants.add(Enfant);
+        }
     }
     Personne (){
         set_prenom("???");
@@ -37,6 +41,19 @@ public class Personne {
     public void afficher(){
         System.out.println(this.prenom);
         System.out.println(this.nom);
+    }
+    /**
+     * @return ArrayList<Enfant> return the Enfants
+     */
+    public ArrayList<Enfant> getEnfants() {
+        return Enfants;
+    }
+
+    /**
+     * @param Enfants the Enfants to set
+     */
+    public void setEnfants(ArrayList<Enfant> Enfants) {
+        this.Enfants.add(Enfants);
     }
 
 }

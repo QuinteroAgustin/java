@@ -3,7 +3,6 @@ import java.util.ArrayList;
 
 public class ja51 {
     public static void main(String[] args) {
-        System.out.println("-- partie 1 --");
         Personne personne1 = new Personne("jack", "lefoudroiyeur");
         Personne personne2 = new Personne();
         Personne personne3 = new Personne();
@@ -24,5 +23,7 @@ public class ja51 {
         }
 
         System.out.println("Nombres de personnes : "+ lesPersonnes.size());
+
+        System.out.println("-- partie 3 --");
     }
 }
