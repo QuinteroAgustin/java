@@ -1,5 +1,4 @@
 package ja51;
-import java.util.ArrayList;
 
 public class Personne {
     // Propriétés
