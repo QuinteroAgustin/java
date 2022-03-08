@@ -35,4 +35,11 @@ public class Enfant {
     public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
+
+    /**
+     * @param prenom the prenom to set
+     */
+    public void afficher() {
+        System.out.println("Enfant : "+this.prenom+" age :"+this.age);
+    }
 }

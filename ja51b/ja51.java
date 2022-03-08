@@ -3,7 +3,18 @@ import java.util.ArrayList;
 
 public class ja51 {
     public static void main(String[] args) {
-        Personne personne1 = new Personne("jack", "lefoudroiyeur");
+        System.out.println("-- partie 3 --");
+
+        Enfant enfant1 = new Enfant("clolo", 18);
+        Enfant enfant2 = new Enfant("clacla", 21);
+
+        ArrayList<Enfant> Enfants_p = new ArrayList<Enfant>();
+        Enfants_p.add(enfant1);
+        Enfants_p.add(enfant2);
+        
+
+        System.out.println("-- partie 1 --");
+        Personne personne1 = new Personne("jack", "lefoudroiyeur", Enfants_p);
         Personne personne2 = new Personne();
         Personne personne3 = new Personne();
 
@@ -25,5 +36,11 @@ public class ja51 {
         System.out.println("Nombres de personnes : "+ lesPersonnes.size());
 
         System.out.println("-- partie 3 --");
+        for(Personne personne : lesPersonnes){
+            System.out.println(personne.get_nom());
+            if(personne.getEnfants() > 0){
+                personne.getEnfantsInfo();
+            }
+        }
     }
 }

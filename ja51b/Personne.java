@@ -7,10 +7,10 @@ public class Personne {
     private String prenom;
     private ArrayList<Enfant> Enfants = new ArrayList<Enfant>();
     // Constructeur
-    Personne (String prenom, String nom, ArrayList<Enfant> Enfants){
+    Personne (String prenom, String nom, ArrayList<Enfant> Enfants_p){
         set_prenom(prenom);
         set_nom(nom);
-        for(String Enfant : Enfants){
+        for(Enfant Enfant : Enfants_p){
             this.Enfants.add(Enfant);
         }
     }
@@ -45,15 +45,26 @@ public class Personne {
     /**
      * @return ArrayList<Enfant> return the Enfants
      */
-    public ArrayList<Enfant> getEnfants() {
-        return Enfants;
+    public int getEnfants() {
+        return this.Enfants.size();
     }
 
     /**
      * @param Enfants the Enfants to set
      */
-    public void setEnfants(ArrayList<Enfant> Enfants) {
-        this.Enfants.add(Enfants);
+    public void setEnfants(ArrayList<Enfant> Enfants_p) {
+        for(Enfant Enfant : Enfants_p){
+            this.Enfants.add(Enfant);
+        }
+    }
+
+    /**
+     * @return ArrayList<Enfant> return the Enfants
+     */
+    public void getEnfantsInfo() {
+        for(Enfant Enfant : Enfants){
+            Enfant.afficher();;
+        }
     }
 
 }
