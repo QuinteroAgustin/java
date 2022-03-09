@@ -96,7 +96,7 @@ public class Film {
     public void getLibelleActeur() {
         if(this.Acteurs.size()>0){
             for(Acteur Acteur : this.Acteurs){
-                System.out.println("Acteur : "+ Acteur.getNom() + " " + Acteur.getPrenom());
+                System.out.println("Acteur : "+ Acteur.getNomComplet());
             }
         }else{
             System.out.println("Pas d'acteur");
@@ -113,7 +113,7 @@ public class Film {
         System.out.println("Année : "+ this.Date);
         if(Acteurs.size()>0){
             for(Acteur Acteur : Acteurs){
-                System.out.println("Acteur : "+ Acteur.getNom() + " " + Acteur.getPrenom());
+                System.out.println("Acteur : "+ Acteur.getNomComplet());
             }
         }
         
