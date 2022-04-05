@@ -1,17 +1,20 @@
 package ja18b;
-
+import java.util.Scanner;
 public class Calculatrice{
     private Double nb1;
     private Double nb2;
     private String operateur;
 
-    public Calculatrice(Double nb1, Double nb2, String operateur){
-        this.nb1 = nb1;
-        this.nb2 = nb2;
-        this.operateur = operateur;
-    }
-
     public void calculer(){
+        Scanner clavier = new Scanner(System.in);
+        System.out.println("Nombre 1 ?");
+        this.nb1 = clavier.nextDouble();
+        System.out.println("Opérateur ?");
+        this.operateur = clavier.next();
+        System.out.println("Nombre 2 ?");
+        this.nb2 = clavier.nextDouble();
+        clavier.close();
+        
         if(operateur.equals("+")){
             System.out.println(nb1+"+"+nb2+"="+(nb1+nb2));
         }else if(operateur.equals("-")){
