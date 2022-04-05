@@ -7,4 +7,4 @@ public class ja18b {
         Calculatrice calcul = new Calculatrice();
         calcul.calculer();
     }
-}2
+}
